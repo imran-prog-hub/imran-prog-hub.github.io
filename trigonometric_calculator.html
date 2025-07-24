@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trigonometric Calculator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #222;
+    }
+    input, select, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 1.3em;
+      color: #1e1e2f;
+      font-weight: bold;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 8px 16px;
+      background-color: #1e1e2f;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .back-btn:hover {
+      background-color: #00ffd5;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Trigonometric Calculator</h1>
+
+  <p>Enter an angle in degrees and select the function:</p>
+
+  <input type="number" id="angleInput" placeholder="Enter angle in degrees" />
+
+  <select id="functionSelect">
+    <option value="sin">sin</option>
+    <option value="cos">cos</option>
+    <option value="tan">tan</option>
+  </select>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <div class="result" id="resultDisplay"></div>
+
+  <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+
+  <script>
+    function calculate() {
+      const angle = parseFloat(document.getElementById('angleInput').value);
+      const func = document.getElementById('functionSelect').value;
+      const radians = angle * Math.PI / 180;
+      let result;
+
+      if (isNaN(angle)) {
+        result = "Please enter a valid angle.";
+      } else {
+        switch (func) {
+          case 'sin':
+            result = "sin(" + angle + "°) = " + Math.sin(radians).toFixed(4);
+            break;
+          case 'cos':
+            result = "cos(" + angle + "°) = " + Math.cos(radians).toFixed(4);
+            break;
+          case 'tan':
+            result = "tan(" + angle + "°) = " + Math.tan(radians).toFixed(4);
+            break;
+        }
+      }
+
+      document.getElementById('resultDisplay').innerText = result;
+    }
+  </script>
+
+</body>
+</html>
