@@ -3,86 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Imran's Portfolio</title>
+  <title>D. Imran Basha | Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f9;
+      background: #f4f4f4;
       color: #333;
-      padding: 20px;
     }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
     }
-
-    h1 {
-      color: #222;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #2c2c3c;
+      padding: 12px;
     }
-
-    h1 span {
-      font-size: 1.5rem;
-    }
-
-    ul {
-      line-height: 1.8;
-    }
-
-    a {
+    nav a {
+      color: white;
       text-decoration: none;
-      color: #007bff;
+      font-weight: bold;
     }
-
-    a:hover {
-      text-decoration: underline;
+    nav a:hover {
+      color: #00ffd5;
     }
-
-    .project-links a {
-      display: block;
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2em;
       margin-bottom: 10px;
     }
-
-    .footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
-      color: #666;
+    .section p {
+      font-size: 1.1em;
+      color: #555;
     }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 20px;
-      }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #1e1e2f;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #00ffd5;
+      color: black;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 5px 0;
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c2c3c;
+      color: white;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hello, I’m Imran 👋</h1>
-    <p>I’m a B.Tech student learning <strong>AI</strong> and <strong>Web Development</strong>.</p>
 
-    <h2>Skills</h2>
+  <header>
+    <h1>D. Imran Basha</h1>
+    <p>Future Software Engineer | AI Enthusiast | Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>Myself Imran. I'm currently pursuing B.Tech 2nd year in <strong>MITS Deemed University</strong>, in the department of <strong>Computer Science Engineering – Artificial Intelligence</strong>.</p>
+    <p>I aim to become a <strong>Software Engineer</strong> with a focus on <strong>Frontend & Backend Development, DevOps Engineering</strong>, and also work toward building advanced models in <strong>Artificial Intelligence</strong>.</p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>My Skills</h2>
     <ul>
-      <li>Python</li>
+      <li>C Language</li>
+      <li>C++</li>
       <li>Java</li>
-      <li>SQL</li>
+      <li>Python</li>
+      <li>Data Structures</li>
     </ul>
+  </section>
 
+  <section class="section" id="projects">
     <h2>Projects</h2>
-    <div class="project-links">
-      <a href="#" target="_blank">🔧 Diet Tracker</a>
-      <a href="#" target="_blank">🧮 Simple Calculator</a>
-      <!-- You can add more links here -->
-    </div>
+    <ul>
+      <li><strong>Trigonometric Calculator</strong> – performs sin, cos, tan functions easily</li>
+      <li><strong>Tally System</strong> – simple tool for business merchants</li>
+      <li><strong>Diet Planner</strong> – helps users maintain a healthy food routine</li>
+    </ul>
+    <p>You can try one of my projects:</p>
+    <a href="calculator.html" class="btn">Try Calculator</a>
+  </section>
 
-    <div class="footer">
-      <p>Made with ❤️ by Imran</p>
-    </div>
-  </div>
+  <section class="section" id="resume">
+    <h2>Resume</h2>
+    <a href="your-resume.pdf" class="btn" target="_blank">View My Resume</a>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: dimranbasha56@gmail.com</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <p>phone no: 9440460135</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 D. Imran Basha. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
