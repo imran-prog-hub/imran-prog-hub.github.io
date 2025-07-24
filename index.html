@@ -1,18 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Imran's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #222;
+    }
+
+    h1 span {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .project-links a {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m Imran 👋</h1>
-  <p>I'm a B.Tech student learning AI and Web Development.</p>
-  <h2>Skills</h2>
-  <ul>
-    <li>Python</li>
-    <li>Java</li>
-    <li>SQL</li>
-  </ul>
-  <h2>Projects</h2>
-  <p>Diet Tracker, Simple Calculator</p>
+  <div class="container">
+    <h1>Hello, I’m Imran 👋</h1>
+    <p>I’m a B.Tech student learning <strong>AI</strong> and <strong>Web Development</strong>.</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>SQL</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <div class="project-links">
+      <a href="#" target="_blank">🔧 Diet Tracker</a>
+      <a href="#" target="_blank">🧮 Simple Calculator</a>
+      <!-- You can add more links here -->
+    </div>
+
+    <div class="footer">
+      <p>Made with ❤️ by Imran</p>
+    </div>
+  </div>
 </body>
 </html>
